@@ -5,16 +5,16 @@ console.log("");
 
 const titleOfCategory = document.querySelectorAll("ul h2");
 const list = document.querySelector("li ul");
-for (const el of titleOfCategory) {
-    console.log(`Category: ${el.textContent}`);
-    console.log(`Elements: ${list.children.length}`);
+const childList = list.children;
+
+// for (const el of titleOfCategory) {
+//     console.log(`Category: ${el.textContent}`);
+//     console.log(`Elements: ${childList.length}`);
+//     console.log("");
+// };
+
+titleOfCategory.forEach(function (element, index) {
+    console.log(`Category: ${element.textContent}`);
+    console.log(`Elements: ${childList.length}`);
     console.log("");
-};
-
-
-// const list = document.querySelector("li ul");
-
-// console.log(list);
-
-// const b = list.children;
-// console.log(b.length);
+});
