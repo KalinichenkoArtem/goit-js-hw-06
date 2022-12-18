@@ -11,7 +11,8 @@ function onFormSubmit(event) {
     return alert("Все поля должны быть запонены!");
     };
 
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    const userData = [`Email: ${email.value}, Password: ${password.value}`];
   
-    event.currentTarget.reset();
+  event.currentTarget.reset();
+  console.log(userData);
 };
