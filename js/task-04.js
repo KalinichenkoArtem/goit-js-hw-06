@@ -4,7 +4,6 @@ const counterValue = document.querySelector("span");
 
 counterValue.innerHTML = 0;
 
-
 btnOne.addEventListener("click", () => {
     counterValue.innerHTML -= 1;
 });
